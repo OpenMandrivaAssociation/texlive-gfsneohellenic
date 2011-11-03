@@ -1,3 +1,9 @@
+# revision 19440
+# category Package
+# catalog-ctan /fonts/greek/gfs/gfsneohellenic
+# catalog-date 2009-01-15 17:25:25 +0100
+# catalog-license other-free
+# catalog-version 1.0 rev
 Name:		texlive-gfsneohellenic
 Version:	1.0
 Release:	1
@@ -159,6 +165,7 @@ fonts is provided, offering OT1, T1 and LGR encodings.
 %doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/README.TEXLIVE
 %doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/gfsneohellenic.pdf
 %doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/gfsneohellenic.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -169,3 +176,5 @@ fonts is provided, offering OT1, T1 and LGR encodings.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
