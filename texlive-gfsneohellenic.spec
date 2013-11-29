@@ -1,12 +1,12 @@
-# revision 19440
+# revision 31979
 # category Package
 # catalog-ctan /fonts/greek/gfs/gfsneohellenic
-# catalog-date 2009-01-15 17:25:25 +0100
+# catalog-date 2013-10-23 14:10:10 +0200
 # catalog-license other-free
-# catalog-version 1.0 rev
+# catalog-version undef
 Name:		texlive-gfsneohellenic
 Version:	1.0
-Release:	2
+Release:	3
 Summary:	A Greek font in the Neo-Hellenic style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/gfs/gfsneohellenic
@@ -154,8 +154,7 @@ fonts is provided, offering OT1, T1 and LGR encodings.
 %doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/OFL.txt
 %doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/README
 %doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/README.TEXLIVE
-%doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/gfsneohellenic.pdf
-%doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/gfsneohellenic.tex
+%doc %{_texmfdistdir}/doc/fonts/gfsneohellenic/VERSION
 
 #-----------------------------------------------------------------------
 %prep
@@ -166,17 +165,3 @@ fonts is provided, offering OT1, T1 and LGR encodings.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 752310
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 718551
-- texlive-gfsneohellenic
-- texlive-gfsneohellenic
-- texlive-gfsneohellenic
-- texlive-gfsneohellenic
-
