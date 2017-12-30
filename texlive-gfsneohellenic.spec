@@ -5,8 +5,8 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-gfsneohellenic
-Version:	1.0
-Release:	11
+Version:	20131023
+Release:	1
 Summary:	A Greek font in the Neo-Hellenic style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/gfs/gfsneohellenic
