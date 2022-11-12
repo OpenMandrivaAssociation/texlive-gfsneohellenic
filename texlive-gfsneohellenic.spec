@@ -1,18 +1,12 @@
-# revision 31979
-# category Package
-# catalog-ctan /fonts/greek/gfs/gfsneohellenic
-# catalog-date 2013-10-23 14:10:10 +0200
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-gfsneohellenic
-Version:	20190228
+Version:	63944
 Release:	1
 Summary:	A Greek font in the Neo-Hellenic style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/greek/gfs/gfsneohellenic
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gfsneohellenic.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gfsneohellenic.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gfsneohellenic.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gfsneohellenic.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ cmbright fonts for mathematics support. LaTeX support of the
 fonts is provided, offering OT1, T1 and LGR encodings.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -158,7 +152,7 @@ fonts is provided, offering OT1, T1 and LGR encodings.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
