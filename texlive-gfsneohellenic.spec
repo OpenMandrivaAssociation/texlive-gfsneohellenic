@@ -3,7 +3,7 @@ Version:	63944
 Release:	2
 Summary:	A Greek font in the Neo-Hellenic style
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/greek/gfs/gfsneohellenic
+URL:		https://www.ctan.org/tex-archive/fonts/greek/gfs/gfsneohellenic
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gfsneohellenic.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gfsneohellenic.doc.r%{version}.tar.xz
